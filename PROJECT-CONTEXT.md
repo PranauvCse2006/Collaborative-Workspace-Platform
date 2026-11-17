@@ -160,17 +160,9 @@ Before committing, inspect `git status` so only intended files are included. Use
 
 The initial commit and push of `Project-Overview.md` were suggested, but their successful completion was not confirmed in the conversation. Verify the repository before assuming the file is online.
 
-## 10. Internship and Report Context
 
-The internship report submission deadline discussed is **November 29, 2026**. The company provided a Full Stack Development Intern letter but did not specify a particular software project.
 
-The platform may be described as an independently selected practical project undertaken to apply full-stack development concepts, provided that this accurately reflects the work performed. Do not claim that the company formally assigned, supervised, or approved the project unless that is true.
-
-The report must accurately describe attendance, learning activities, project origin, dates, and actual development progress.
-
-## 11. Immediate Delivery Priority
-
-Because the report deadline is close, prioritize a small, working MVP rather than promising completion of every advanced feature.
+## 10. Immediate Delivery Priority
 
 Suggested order:
 
@@ -187,11 +179,11 @@ Suggested order:
 
 Advanced workflows, notifications, analytics, and other enhancements can follow after the core MVP.
 
-## 12. Free Deployment Requirement
+## 11. Free Deployment Requirement
 
 The goal is to deploy publicly without paid subscriptions or a paid domain. Free hosting options previously considered include Cloudflare Pages, Render, and Supabase, but the database choice currently recorded is MySQL. Check compatibility, current pricing, sleep/pause behavior, and any payment-card requirements before selecting providers. Do not assume a free tier is permanent.
 
-## 13. Instructions for Future Development Sessions
+## 12. Instructions for Future Development Sessions
 
 - Continue from the existing repository; do not create a duplicate project.
 - Inspect the current code and files before proposing changes.
