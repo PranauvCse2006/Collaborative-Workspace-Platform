@@ -1,46 +1,34 @@
+import { NavLink } from "react-router-dom";
 
 function Sidebar() {
-  return (
-    <aside className="w-64 min-h-screen bg-slate-900 text-white p-6">
+    const linkStyle = ({ isActive }) =>
+        `block px-3 py-2 rounded-lg text-sm ${
+            isActive
+                ? "bg-slate-800 text-white"
+                : "text-slate-300 hover:bg-slate-800 hover:text-white"
+        }`;
 
-      <h1 className="text-2xl font-bold">
-        Workspace
-      </h1>
+    return (
+        <div className="w-64 min-h-screen bg-slate-900 p-5 text-white">
+            <h1 className="text-xl font-bold">Workspace</h1>
+            <p className="text-xs text-slate-400 mt-1">
+                Collaborative Platform
+            </p>
 
-      <p className="text-sm text-slate-400 mt-1">
-        Collaborative Platform
-      </p>
+            <hr className="my-5 border-slate-700" />
 
-      <hr className="my-6 border-slate-700" />
+            <nav className="space-y-2">
+                <NavLink to="/" className={linkStyle}>Dashboard</NavLink>
+                <NavLink to="/projects" className={linkStyle}>Projects</NavLink>
+                <NavLink to="/tasks" className={linkStyle}>My Tasks</NavLink>
+                <NavLink to="/members" className={linkStyle}>Members</NavLink>
+            </nav>
 
-      <nav className="flex flex-col gap-4">
+            <hr className="my-5 border-slate-700" />
 
-        <a href="#" className="hover:text-blue-400">
-          Dashboard
-        </a>
-
-        <a href="#" className="hover:text-blue-400">
-          Projects
-        </a>
-
-        <a href="#" className="hover:text-blue-400">
-          My Tasks
-        </a>
-
-        <a href="#" className="hover:text-blue-400">
-          Members
-        </a>
-
-      </nav>
-
-      <hr className="my-6 border-slate-700" />
-
-      <a href="#" className="hover:text-blue-400">
-        Settings
-      </a>
-
-    </aside>
-  );
+            <NavLink to="/settings" className={linkStyle}>Settings</NavLink>
+        </div>
+    );
 }
 
 export default Sidebar;
