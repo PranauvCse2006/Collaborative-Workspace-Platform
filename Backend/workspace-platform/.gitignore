@@ -31,3 +31,25 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local Spring configuration
+application-local.properties
+
+# Build output
+**/target/
+**/node_modules/
+**/dist/
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
